@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/* 1480px */
+@media (max-width : 1480px) {
+    header {
+        margin: 0 3.5vw;
+    }
+    .con1, .con2{
+        width: 100%;
+    }
+}
+
+/* 1023px */
+@media (max-width : 1023px) {
+    header {
+        height: 80px;
+    }
+
+    .logo {
+        top: 20px;
+    }
+
+    .logo01 {
+        font-size: 0.7rem;
+    }
+
+    .logo02 {
+        font-size: 0.9rem;
+    }
+
+    .menu_container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 10;
+    }
+
+    #menu {
+        margin-top: 12hv;
+    }
+
+    #menu>li {
+        display: block;
+    }
+
+    #menu>li>a {
+        padding: 0;
+        font-size: 5vw;
+        line-height: 15vh;
+    }
+
+    .m_menuBtn {
+        display: block;
+        z-index: 20;
+    }
+
+    .m_menuBtn span {}
+
+    .m_menuBtn_line1 {}
+
+    .m_menuBtn_line2 {}
+
+    .m_menuBtn.on span {}
+
+    .global_container {
+        display: none;
+    }
+
+    .register_container {
+        top: 30px;
+        right: 40px;
+    }
+
+    .register_container a {
+        font-size: 14px;
+        padding: 0;
+        border: none;
+    }
+    .register_container a:hover::after{
+        transform: none;
+        transition: none;
+        background-color: transparent;
+    }
+    #header_wrap.scroll .register_container{
+        border: none;
+    }
+    .main_text {
+        font-size: 5vw;
+    }
+
+    .main_text_reservation {
+        display: inline-block;
+    }
+
+    .main_text_reservation a {
+        display: block;
+        padding: 15px 30px;
+        color: black;
+        background-color: white;
+        position: relative;
+    }
+    .main_text_reservation a:after{
+        content: "";
+        background-color: #6936e063;
+        position: absolute;
+        width : 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in;
+    }
+    .main_text_reservation a:hover::after{
+        transform: scaleX(1);
+    }
+/*     .main_text_reservation a:hover {
+        color: white;
+        background-color: #6836e0;
+        transition: all 0.5s ease-in;
+    } */
+
+    /* 600px */
+    @media(max-width : 600px) {
+        .main_text {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+    }
+}

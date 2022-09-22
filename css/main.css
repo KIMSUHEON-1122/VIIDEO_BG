@@ -1,0 +1,253 @@
+@charset "UTF-8";
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: black;
+    color: white;
+}
+#header_wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 5;
+    color: white;
+    transition : 300ms
+}
+#header_wrap.scroll{
+    background-color: #c3aff056;
+}
+header{
+    margin: 0 5vw;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    top: 30px;
+    transition: all 0.3s;
+}
+#header_wrap.scroll .logo{
+    color: black;
+}
+.logo a{
+    color: inherit;
+    display: block;
+    line-height: 1; 
+}
+.logo01,.logo02{
+    font-family: 'Abril Fatface', cursive;
+    display: block;
+}
+.logo01{
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.logo02{
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 8px;
+}
+main{
+    
+}
+.main_full{
+
+}
+.main_visual{
+    width: 100%;
+    height: 100vh;
+}
+.main_visual video{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+}
+.menu_container{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+#menu{
+    display: inline-block;
+}
+#menu > li{
+    display: inline-block;
+}
+#header_wrap.scroll #menu > li{
+    color: black;
+}
+#menu > li >a{
+    display: inline-block;
+    padding: 15px 20px;
+    color: inherit;
+}
+.global_container{
+    position: absolute;
+    right: 200px;
+    top: calc(30px);
+    transition: all 0.5s;
+}
+.global_container a{
+    color: inherit;
+    font-size: 2rem;
+}
+#header_wrap.scroll .register_container{
+    border: 1px solid black;
+}
+.register_container{
+    position: absolute;
+    right: 0;
+    top: calc(30px);
+    transition: all 0.5s;
+}
+.register_container a{
+    display: block;
+    padding: 15px 30px;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+}
+.register_container a::after{
+    content: "";
+        background-color: #6936e063;
+        position: absolute;
+        width : 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in;
+}
+.register_container a:hover::after{
+    transform: scaleX(1);
+}
+#header_wrap.scroll .register_container a{
+    color: rgba(0, 0, 0, 0.568);
+}
+#header_wrap.scroll .register_container a:hover{
+    color: black;
+}
+/* .register_container a:hover{
+    color: black;
+    background-color: white;
+    transition: all 0.5s ease-in;
+} */
+.m_menuBtn{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 24px;
+    height: 24px;
+}
+.m_menuBtn span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: 300ms;
+}
+#header_wrap.scroll .m_menuBtn span{
+    background-color: black;
+
+}
+.m_menuBtn_line1{
+    top: 5px;
+}
+.m_menuBtn_line2{
+    top: 14px;
+}
+.m_menuBtn.on .m_menuBtn_line1{
+    transform: rotate(45deg);
+    top: 8px;
+}
+.m_menuBtn.on .m_menuBtn_line2{
+    transform: rotate(-45deg);
+    top: 8px;
+}
+section{
+
+}
+.main_visual{
+    position: relative;
+}
+.main_text_container{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+}
+.main_text{
+    font-size: 50px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+.main_text_reservation{
+    display: none;
+}
+.main_text_reservation a{
+
+}
+.con1, .con2{
+    width: 1480px;
+    margin: 50px auto 30px;
+    padding: 30px;
+    border: 1px solid;
+}
+.con1{
+    background-image: url("../media/bg1.jpg");
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.con1_img_wrap{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.con1 img{
+    width: 300px;
+    border-radius: 24px;
+}
+.con1 p{
+    padding: 10px 100px;
+}
+.con1 span{
+    color: #ff00d8;
+}
+.con2{
+    background-color: #0f0f0f;
+    display: flex;
+}
+.con2_img_wrap{
+
+}
+.con2_img_wrap img{
+    width: 400px;
+}
+.con2_span_wrap{
+    display: flex;
+    justify-content: center;
+}
+.con2_span_wrap a{
+    padding: 10px;
+}
+.con2_text_wrap{
+    padding: 10px 100px 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.con2_text_wrap p{
+    text-align: center;
+}
+.con2_text_wrap span{
+    color: #ff00d8;
+}
